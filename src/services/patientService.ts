@@ -14,7 +14,7 @@ export class PatientService {
       }
       
       const result: ApiResponse<Patient[]> = await response.json();
-      return result.data || [];
+      return result || [];
     } catch (error) {
       console.error('Error fetching patients:', error);
       throw error;
@@ -33,7 +33,7 @@ export class PatientService {
       }
       
       const result: ApiResponse<Patient> = await response.json();
-      return result.data;
+      return result;
     } catch (error) {
       console.error(`Error fetching patient ${id}:`, error);
       throw error;
