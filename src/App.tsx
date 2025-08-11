@@ -4,7 +4,6 @@ import { Layout } from './components/layout/Layout';
 import { PatientIndex } from './components/patients/PatientIndex';
 import { PatientDetail } from './components/patients/PatientDetail';
 import { AppointmentIndex } from './components/appointments/AppointmentIndex';
-import './App.css';
 
 function App() {
   return (
